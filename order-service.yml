@@ -29,5 +29,11 @@ resilience4j:
         slidingWindowSize: 5
         minimumNumberOfCalls: 3
         failureRateThreshold: 50
-        waitDurationInOpenState: 10s      
+        waitDurationInOpenState: 10s  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health        
+        
       
